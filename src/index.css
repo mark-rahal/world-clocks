@@ -142,5 +142,12 @@ background-color: #8FD5A6;
 }
 
 .digital {
-
+    position: absolute;
+    left: 12%;
+    top: 42%;
+    border-style: solid;
+    border-color: #4d4b63;
+    border-width: 3px;
+    font-family: Verdana, sans-serif;
+    font-size: .8em;
 }

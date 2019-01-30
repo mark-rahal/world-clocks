@@ -67,13 +67,15 @@ class Clock extends React.Component {
                     <div className="marking marking-three"></div>
                     <div className="marking marking-four"></div>
                     <div className="inner-clock-face">
+                        <div className="digital">
+                            <h2>{this.state.date.getHours()}:{(this.state.date.getMinutes() < 10)? '0' +
+                                this.state.date.getMinutes(): this.state.date.getMinutes()}:{(this.state.date.getSeconds()
+                                < 10)? '0' + this.state.date.getSeconds(): this.state.date.getSeconds()}</h2>
+                        </div>
                         <div className="hand hour-hand"></div>
                         <div className="hand min-hand"></div>
                         <div className="hand second-hand"></div>
                     </div>
-                </div>
-                <div className="digital">
-                    <h2>{this.state.date.getHours()}:{this.state.date.getMinutes()}:{this.state.date.getSeconds()}</h2>
                 </div>
             </div>
         );
